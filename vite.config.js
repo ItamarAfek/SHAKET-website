@@ -11,6 +11,7 @@ export default defineConfig({
         visuals: resolve(__dirname, 'visuals.html'),
         about: resolve(__dirname, 'about.html'),
         mixing: resolve(__dirname, 'mix-master.html'),
+        live: resolve(__dirname, 'live.html'),
       },
     },
   },
