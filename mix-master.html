@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAKET //MIX</title>
+</head>
+<body>
+
+    <nav class="collapsible-nav">
+    <button id="menuTrigger" class="menu-toggle-btn" onclick="toggleMobileMenu()">[ MENU ]</button>
+    
+    <ul id="navLinks">
+       <li><a href="/index.html">SHAKET</a></li>
+       <li><a href="/music.html">MUSIC PRODUCTION</a></li>
+       <li><a href="/live.html">LIVE PRODUCTION</a></li>
+       <li><a href="/visuals.html">VISUALS</a></li>
+       <li><a href="/about.html">ABOUT</a></li>
+       <li><a href="https://instagram.com/itamar.afek">INSTAGRAM</a></li>
+    </ul>
+</nav>
+
+<script>
+  // Global scope function ensures the button can always access it instantly
+  function toggleMobileMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const menuTrigger = document.getElementById("menuTrigger");
+      
+      navLinks.classList.toggle("menu-active");
+      
+      if (navLinks.classList.contains("menu-active")) {
+          menuTrigger.textContent = "[ CLOSE ]";
+      } else {
+          menuTrigger.textContent = "[ MENU ]";
+      }
+  }
+</script>
+
+
+    <div class="mag-title"> 
+    <h1 class="mag-title">MIXING</h1>
+    </div>
+    
+    
+
+    <main class="music-fullscreen-grid masonry-mode">
+
+        <!-- 06: Overworn -->
+        <a href="https://samply.app/p/X0PNzf7H3xCktLcv5Tuj?si=zMmylOVuYIMepGQbKIVy5MFM5B22" target="_blank" class="editorial-card tall">
+            <div class="blend-container"><img src="/assets/Overworn.png" alt="Art" class="blend-image"></div>
+            <div class="panel-label"><span class="catalog-tag">unreleased</span><h3>Overworn</h3></div>
+        </a>
+
+        <!-- 02: Universe -->
+        <a href="https://open.spotify.com/track/65iIotxQzuWUGFcU3s5hOe?si=835a400729244641" target="_blank" class="editorial-card tall">
+            <div class="blend-container"><img src="/assets/Universe_Art.png" alt="Art" class="blend-image"></div>
+            <div class="panel-label"><span class="catalog-tag">Out Now</span><h3>Itamar Afek - Universe</h3></div>
+        </a>
+        <!-- 03: I Love You Porgy -->
+        <a href="https://samply.app/p/gDTGNs90FQj9MjI95JGL?si=zMmylOVuYIMepGQbKIVy5MFM5B22" target="_blank" class="editorial-card tall">
+            <div class="blend-container"><img src="/assets/Porgy.png" alt="Art" class="blend-image"></div>
+            <div class="panel-label"><span class="catalog-tag">unreleased</span><h3>I Love You Porgy</h3></div>
+        </a>
+        <!-- 04: Meditation  -->
+        <a href="https://samply.app/p/K0CfwtukF5TuIC9miLk9?si=zMmylOVuYIMepGQbKIVy5MFM5B22" target="_blank" class="editorial-card tall">
+            <div class="blend-container"><img src="/assets/Take_it_on_me.png" alt="Art" class="blend-image"></div>
+            <div class="panel-label"><span class="catalog-tag">Out Soon</span><h3>MAYIA - Meditation</h3></div>
+        </a>   
+
+    </main>
+
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+<br/>
+   <div class="bio-wrapper" >
+    <h2>
+<a href="mailto:itamar.afek@gmail.com" target="_blank" rel="noopener noreferrer" class="word-link">TALK TO ME</a>
+    </h2>
+    
+</div>
+<br/>
+</html>

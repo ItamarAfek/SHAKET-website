@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHAKET // ABOUT</title>
+  </head>
+  <body id="about_body">
+    
+    <canvas id="inkCanvas"></canvas>
+
+    <nav class="collapsible-nav">
+    <button id="menuTrigger" class="menu-toggle-btn" onclick="toggleMobileMenu()">[ MENU ]</button>
+    
+    <ul id="navLinks">
+       <li><a href="/index.html">SHAKET</a></li>
+       <li><a href="/music.html">MUSIC PRODUCTION</a></li>
+       <li><a href="/live.html">LIVE PRODUCTION</a></li>
+       <li><a href="/visuals.html">VISUALS</a></li>
+       <li><a href="/about.html">ABOUT</a></li>
+       <li><a href="https://instagram.com/itamar.afek">INSTAGRAM</a></li>
+    </ul>
+</nav>
+
+<script>
+  // Global scope function ensures the button can always access it instantly
+  function toggleMobileMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const menuTrigger = document.getElementById("menuTrigger");
+      
+      navLinks.classList.toggle("menu-active");
+      
+      if (navLinks.classList.contains("menu-active")) {
+          menuTrigger.textContent = "[ CLOSE ]";
+      } else {
+          menuTrigger.textContent = "[ MENU ]";
+      }
+  }
+</script>
+    
+    <main>
+        <div id="about_img">
+            <img src="/assets/Modular_Cover.jpg" alt="About Profile Art">
+        </div>
+    </main>
+
+    <script type="module" src="src/main.js"></script> 
+    <section class="about-text-monolith">
+   <div class="bio-wrapper">
+    
+    <p class="regular_text">SHAKET (A.K.A Itamar Afek) is a boston based producer, songwriter and keys player.
+        Although his sound pallet is electronic in nature, he has worked on music ranging from Pop to EDM to Folk. 
+        He takes pride in creating new captivating sound worlds for his productions, 
+        while always keeping the song, and the lyrics, at the center. 
+    </p>
+    <h2 class="regular_text">AVAILABLE FOR <a href="/music.html" class="word-link">PRODUCTION,</a>
+    <a href="/mix-master.html" class="word-link">MIXING,</a>   
+        <a href="/live.html" class="word-link">LIVE SHOW DIRECTION</a>  
+        AND SONGWRITING / PRODUCTION CONSULTING. 
+    </br>
+    </br>
+        <a href="mailto:itamar.afek@gmail.com" target="_blank" rel="noopener noreferrer" class="word-link">Talk to me</a></h2>
+    
+    </div>
+    
+</div>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAKET // VISUALS</title>
+</head>
+<body>
+
+    <canvas id="inkCanvas"></canvas>
+    <script type="module" src="src/main.js"></script>
+    
+    <nav class="collapsible-nav">
+    <button id="menuTrigger" class="menu-toggle-btn" onclick="toggleMobileMenu()">[ MENU ]</button>
+    
+    <ul id="navLinks">
+       <li><a href="/index.html">SHAKET</a></li>
+       <li><a href="/music.html">MUSIC PRODUCTION</a></li>
+       <li><a href="/live.html">LIVE PRODUCTION</a></li>
+       <li><a href="/visuals.html">VISUALS</a></li>
+       <li><a href="/about.html">ABOUT</a></li>
+       <li><a href="https://instagram.com/itamar.afek">INSTAGRAM</a></li>
+    </ul>
+</nav>
+
+<script>
+  // Global scope function ensures the button can always access it instantly
+  function toggleMobileMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const menuTrigger = document.getElementById("menuTrigger");
+      
+      navLinks.classList.toggle("menu-active");
+      
+      if (navLinks.classList.contains("menu-active")) {
+          menuTrigger.textContent = "[ CLOSE ]";
+      } else {
+          menuTrigger.textContent = "[ MENU ]";
+      }
+  }
+</script>
+
+
+<div class="mag-title"> 
+    <h1 class="mag-title">VISUALS</h1>
+</div>
+    
+<main class="music-fullscreen-grid masonry-mode">
+
+    <!-- Earth -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139649/earth.gif_n7tyhv.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card"></video>
+
+    <!-- Circles -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139648/circles.gif_nhgep1.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card tall"></video>
+
+    <!-- LOSE CONTROL -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139648/control.gif_sgmhx5.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card"></video>
+    
+    <!-- SPACE STATION -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139650/space_station.gif_f4yf3a.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card"></video>
+
+    <!-- Smily -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139650/smile.gif_n0tzxy.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card"></video>
+
+    <!-- Fufi Colors -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139648/colors.gif_hwwodp.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card"></video>
+    
+    <!-- Small Town -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783140478/small_town_psxxkp.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card"></video>
+    
+    <!-- Cubes -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139648/boxes.gif_alqkds.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card wide"></video>
+    
+    <!-- Lighthouse -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139649/Lighthouse.gif_qj1qmr.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card"></video>
+
+    <!-- Feedback -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139649/feedback.gif_hrrp50.mp4" 
+           autoplay loop muted playsinline 
+           class="editorial-card"></video>
+
+</main>
+
+<div class="mag-title"> 
+    <h1 class="mag-title">LIVE PERFORMANCE SYSTEMS</h1>
+</div>
+    
+<main class="music-fullscreen-grid masonry-mode">
+
+    <!-- Projection -->
+    <a target="_blank" class="editorial-card giant">
+        <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139650/projection_mapping.gif_wvv4xr.mp4" 
+           autoplay loop muted playsinline></video>
+           <div class="panel-label"><span class="catalog-tag">Projection Mapping</span><h3>Cycles</h3></div>
+    </a>
+
+ <a target="_blank" class="editorial-card giant">
+   <!-- Crowd Sense -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783142034/crowd_sense_k45i6p.mp4" 
+           autoplay loop muted playsinline ></video>
+           <div class="panel-label"><span class="catalog-tag">Visual Analyzing System influencing music based on crowd behavior</span>
+            <h3>Crowd Sense</h3></div>
+    </a>
+
+    <a target="_blank" class="editorial-card giant">
+        <!-- Collapse -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139648/collapse.gif_tyw0tq.mp4" 
+           autoplay loop muted playsinline></video>
+           <div class="panel-label"><span class="catalog-tag">Audio Reactive Visuals</span><h3>Collapse</h3></div>
+    </a>
+    
+
+    <a target="_blank" class="editorial-card giant">
+   <!-- Visual Sequencer -->
+    <video src="https://res.cloudinary.com/cdwnvhxh/video/upload/v1783139650/visual_sequencer.gif_wjb9cd.mp4" 
+           autoplay loop muted playsinline ></video>
+           <div class="panel-label"><span class="catalog-tag">Audio-Visual Interactive Sequencer</span><h3>Orbit Sequencer</h3></div>
+    </a>
+
+    
+
+    
+    
+    
+
+</main>   
+
+
+
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

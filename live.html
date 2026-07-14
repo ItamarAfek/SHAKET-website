@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHAKET // ABOUT</title>
+  </head>
+  <body id="about_body">
+    
+    <canvas id="inkCanvas"></canvas>
+
+    <nav class="collapsible-nav">
+    <button id="menuTrigger" class="menu-toggle-btn" onclick="toggleMobileMenu()">[ MENU ]</button>
+    
+    <ul id="navLinks">
+       <li><a href="/index.html">SHAKET</a></li>
+       <li><a href="/music.html">MUSIC PRODUCTION</a></li>
+       <li><a href="/live.html">LIVE PRODUCTION</a></li>
+       <li><a href="/visuals.html">VISUALS</a></li>
+       <li><a href="/about.html">ABOUT</a></li>
+       <li><a href="https://instagram.com/itamar.afek">INSTAGRAM</a></li>
+    </ul>
+</nav>
+
+<script>
+  // Global scope function ensures the button can always access it instantly
+  function toggleMobileMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const menuTrigger = document.getElementById("menuTrigger");
+      
+      navLinks.classList.toggle("menu-active");
+      
+      if (navLinks.classList.contains("menu-active")) {
+          menuTrigger.textContent = "[ CLOSE ]";
+      } else {
+          menuTrigger.textContent = "[ MENU ]";
+      }
+  }
+</script>
+    
+    
+
+    <script type="module" src="src/main.js"></script> 
+
+   <main class="live-page-spine">
+
+   
+    <section class="live-block horizontal-manifesto-row">
+        
+       
+
+        <div class="manifesto-text-pane">
+            <h3 class="manifesto-statement-headline">WHAT INDEPENDENT ARTISTS GET WRONG ABOUT PERFORMING LIVE</h3>
+            
+            <ul class="manifesto-bullet-list">
+                <li><span>[01]</span> THE STAGE IS THE ULTIMATE PLACE TO CREATE GENUINE CONNECTION BETWEEN YOU AND YOUR AUDIENCE.</li>
+                <li><span>[02]</span> EVERYTHING ON STAGE FEELS DIFFERENT. ACOUSTICALLY, PHYSICALLY AND EMOTIONALLY.</li>
+                <li><span>[03]</span> TO TRUELY REACH THE CROWED, WE NEED TO TRANSLATE YOUR ART TO THE STAGE</li>
+                <li><span>[04]</span> DONE RIGHT, EVERY PERFORMANCE STRENGTHENS RELATIONSHIPS BETWEEN YOU AND YOUR AUDIENCE, AND IS AN OPPERTUNITY TO BRING NEW PEOPLE.</li>
+                <li><span>[05]</span> DONE WRONG, AND THE ENTIRE PRODUCTION BECOMES A MISSED OPPORTUNITY.</li>
+            </ul>
+        </div>
+
+        <div class="manifesto-meta-pane">
+            <div class="meta-sticker">[ 06 ]</div>
+            <div class="meta-statement">ARTISTS WHO SUCCEED ARE THE ONES WHO SHOWCASE UNIFIED, COMPLETE AESTHETIC WORLD FOR THEIR AUDIENCE. 
+                I CAN HELP YOU BRING YOURS TO THE STAGE.</div>
+        </div>
+        
+
+    </section>
+
+   
+    <section class="live-block image-section">
+        <img src="/assets/live_pick.jpg" alt="SHAKET Live Performance Tracking" class="live-hero-img">
+    </section>
+
+    
+    <section class="live-services-split">
+        
+        <div class="live-service-card">
+            <span class="live-tag">[ 01 / MUSIC DIRECTION & ARRANGEMENT ]</span>
+            <h2 class="live-heading">DOING IT THE RIGHT WAY</h2>
+            <p class="live-body-text">
+                With 10 years of experience on the stage and the studio, I'll translate your artistic vision to the stage for any configuration or budget. 
+                We will conceptualize the performance based on the artist that you are and your career goals, arrange the music for a live band, and build custom playback computer setups.
+            </p>
+            <ul class="live-spec-list">
+                <li>MONITOR ROUTING & AUDIO MATRICES</li>
+                <li>LIVE BAND ARRANGEMENTS & SHEET MUSIC</li>
+                <li>SESSION PLAYERS & COACHES</li>
+            </ul>
+        </div>
+
+        <div class="live-service-card">
+            <span class="live-tag">[ 02 / LIVE VISUALS ]</span>
+            <h2 class="live-heading">YOUR VISION - LIVE</h2>
+            <p class="live-body-text">
+                To be truly remembered, artists today need to showcase a complete world. What you show is as important as how you sound. 
+                While building your set, we'll develop a visual concept that pairs with your music to create an artistic vision that is bigger than the sum of its parts.
+            </p>
+            <ul class="live-spec-list">
+                <li>INTERACTIVE & PRE-MADE VISUALS FOR YOUR SHOW</li>
+                <li>INTEGRATED LIGHTING DESIGN CONCEPTS</li>
+                <li>IMMERSIVE EXPERIENCE FOR ANY BUDGET</li>
+            </ul>
+        </div>
+
+    </section>
+
+    
+    <section class="live-block cta-section">
+        <a href="mailto:itamar.afek@gmail.com" target="_blank" rel="noopener noreferrer" class="live-cta-link">
+            TALK TO ME / PRODUCTION CONSULTATION →
+        </a>
+    </section>
+
+</main>
+  </body>
+</html>
